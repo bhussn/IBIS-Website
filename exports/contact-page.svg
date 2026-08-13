@@ -1,0 +1,165 @@
+<svg width="1440" height="3200" viewBox="0 0 1440 3200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap');
+      text { font-family: 'IBM Plex Sans', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="3200" fill="#f8f7f5"/>
+
+  <!-- Navigation -->
+  <rect width="1440" height="80" fill="#ffffff" opacity="0.95"/>
+  <line x1="0" y1="80" x2="1440" y2="80" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <rect x="100" y="20" width="40" height="40" rx="8" fill="#5a7a9b"/>
+  <text x="120" y="46" fill="#ffffff" font-size="18" font-weight="600" text-anchor="middle">IB</text>
+  <text x="155" y="38" fill="#2c3e50" font-size="16" font-weight="500">IBISs</text>
+  <text x="1100" y="46" fill="#2c3e50" font-size="16" font-weight="400">Home</text>
+  <text x="1180" y="46" fill="#2c3e50" font-size="16" font-weight="400">About</text>
+  <text x="1260" y="46" fill="#5a7a9b" font-size="16" font-weight="500">Contact</text>
+
+  <!-- Hero Section with Pattern -->
+  <rect y="80" width="1440" height="300" fill="url(#heroGradient)"/>
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(90,122,155,0.1);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(212,197,176,0.2);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(184,197,214,0.1);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <pattern id="geometricPattern" x="0" y="80" width="80" height="80" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 80 40 L 40 80 L 0 40 Z" fill="none" stroke="#2c3e50" stroke-width="0.3" opacity="0.15"/>
+  </pattern>
+  <rect y="80" width="1440" height="300" fill="url(#geometricPattern)"/>
+
+  <text x="720" y="220" fill="#2c3e50" font-size="48" font-weight="600" text-anchor="middle">Get in Touch</text>
+  <text x="720" y="280" fill="#6b7280" font-size="20" font-weight="400" text-anchor="middle">
+    Start a conversation about how we can support your organization's growth
+  </text>
+
+  <!-- Contact Section -->
+  <rect y="420" width="1440" height="800" fill="#ffffff"/>
+
+  <!-- Left Side - Contact Information -->
+  <text x="150" y="500" fill="#2c3e50" font-size="36" font-weight="600">Let's Connect</text>
+  <text x="150" y="550" fill="#6b7280" font-size="16">
+    <tspan x="150" dy="0">Whether you're looking for training programs, consulting</tspan>
+    <tspan x="150" dy="24">services, or simply want to learn more about what we do,</tspan>
+    <tspan x="150" dy="24">we're here to help. Reach out to us through any of the</tspan>
+    <tspan x="150" dy="24">channels below.</tspan>
+  </text>
+
+  <!-- Location Info -->
+  <rect x="150" y="680" width="48" height="48" rx="8" fill="rgba(90, 122, 155, 0.1)"/>
+  <path d="M 174 692 L 174 712 M 166 704 L 182 704 L 174 716" stroke="#5a7a9b" stroke-width="2" fill="none"/>
+  <text x="210" y="696" fill="#2c3e50" font-size="16" font-weight="600">Our Location</text>
+  <text x="210" y="720" fill="#6b7280" font-size="14">Mogadishu, Somalia</text>
+
+  <!-- Email Info -->
+  <rect x="150" y="760" width="48" height="48" rx="8" fill="rgba(90, 122, 155, 0.1)"/>
+  <rect x="162" y="772" width="24" height="16" rx="2" stroke="#5a7a9b" stroke-width="2" fill="none"/>
+  <path d="M 162 772 L 174 782 L 186 772" stroke="#5a7a9b" stroke-width="2" fill="none"/>
+  <text x="210" y="776" fill="#2c3e50" font-size="16" font-weight="600">Email Us</text>
+  <text x="210" y="800" fill="#6b7280" font-size="14">info@ibiss.com</text>
+
+  <!-- Phone Info -->
+  <rect x="150" y="840" width="48" height="48" rx="8" fill="rgba(90, 122, 155, 0.1)"/>
+  <path d="M 168 852 L 172 856 L 172 872 L 176 876 L 180 876 L 184 872 L 184 856 L 188 852" stroke="#5a7a9b" stroke-width="2" fill="none"/>
+  <text x="210" y="856" fill="#2c3e50" font-size="16" font-weight="600">Call Us</text>
+  <text x="210" y="880" fill="#6b7280" font-size="14">+252 xxx xxx xxx</text>
+
+  <!-- Office Hours Card -->
+  <rect x="150" y="940" width="450" height="160" rx="16" fill="url(#hoursGradient)"/>
+  <defs>
+    <linearGradient id="hoursGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(212,197,176,0.3);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(184,197,214,0.2);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="180" y="990" fill="#2c3e50" font-size="24" font-weight="600">Office Hours</text>
+  <text x="180" y="1030" fill="#6b7280" font-size="14">Saturday - Thursday: 8:00 AM - 5:00 PM</text>
+  <text x="180" y="1060" fill="#6b7280" font-size="14">Friday: Closed</text>
+
+  <!-- Right Side - Contact Form -->
+  <rect x="680" y="480" width="610" height="680" rx="16" fill="#f8f7f5" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <text x="720" y="540" fill="#2c3e50" font-size="28" font-weight="600">Send us a Message</text>
+
+  <!-- Form Field: Name -->
+  <text x="720" y="600" fill="#2c3e50" font-size="14" font-weight="500">Your Name</text>
+  <rect x="720" y="610" width="530" height="48" rx="8" fill="#ffffff" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <text x="735" y="640" fill="#9ca3af" font-size="14">John Doe</text>
+
+  <!-- Form Field: Email -->
+  <text x="720" y="690" fill="#2c3e50" font-size="14" font-weight="500">Email Address</text>
+  <rect x="720" y="700" width="530" height="48" rx="8" fill="#ffffff" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <text x="735" y="730" fill="#9ca3af" font-size="14">john@example.com</text>
+
+  <!-- Form Field: Subject -->
+  <text x="720" y="780" fill="#2c3e50" font-size="14" font-weight="500">Subject</text>
+  <rect x="720" y="790" width="530" height="48" rx="8" fill="#ffffff" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <text x="735" y="820" fill="#9ca3af" font-size="14">How can we help?</text>
+
+  <!-- Form Field: Message -->
+  <text x="720" y="870" fill="#2c3e50" font-size="14" font-weight="500">Message</text>
+  <rect x="720" y="880" width="530" height="144" rx="8" fill="#ffffff" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <text x="735" y="910" fill="#9ca3af" font-size="14">Tell us about your needs...</text>
+
+  <!-- Submit Button -->
+  <rect x="720" y="1060" width="530" height="55" rx="8" fill="#5a7a9b"/>
+  <text x="985" y="1093" fill="#ffffff" font-size="16" font-weight="500" text-anchor="middle">Send Message</text>
+  <path d="M 1110 1083 L 1120 1093 L 1110 1103" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Map Section -->
+  <rect y="1260" width="1440" height="500" fill="#f8f7f5"/>
+  <rect x="150" y="1320" width="1140" height="380" rx="16" fill="#ffffff" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+
+  <!-- Map Placeholder -->
+  <rect x="150" y="1320" width="1140" height="380" rx="16" fill="url(#mapGradient)"/>
+  <defs>
+    <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(90,122,155,0.05);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(212,197,176,0.1);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Map Pin Icon -->
+  <circle cx="720" cy="1500" r="24" fill="#5a7a9b"/>
+  <path d="M 720 1488 L 720 1512 M 712 1504 L 728 1504 L 720 1520" stroke="#ffffff" stroke-width="2" fill="none"/>
+
+  <text x="720" y="1560" fill="#2c3e50" font-size="24" font-weight="600" text-anchor="middle">Visit Our Office</text>
+  <text x="720" y="1595" fill="#6b7280" font-size="16" text-anchor="middle">Mogadishu, Somalia</text>
+
+  <!-- Footer -->
+  <rect y="1800" width="1440" height="1400" fill="#2c3e50"/>
+
+  <!-- Footer Logo -->
+  <rect x="150" y="1920" width="40" height="40" rx="8" fill="#5a7a9b"/>
+  <text x="170" y="1946" fill="#ffffff" font-size="18" font-weight="600" text-anchor="middle">IB</text>
+  <text x="200" y="1938" fill="#ffffff" font-size="18" font-weight="600">IBISs</text>
+  <text x="200" y="1955" fill="#9ca3af" font-size="12">Islamic Banking Integrity Solutions</text>
+
+  <text x="150" y="2010" fill="#9ca3af" font-size="13">
+    <tspan x="150" dy="0">Sharia-compliant consulting and training for</tspan>
+    <tspan x="150" dy="20">human capital development in the Islamic</tspan>
+    <tspan x="150" dy="20">banking sector.</tspan>
+  </text>
+
+  <!-- Quick Links -->
+  <text x="580" y="1950" fill="#ffffff" font-size="16" font-weight="500">Quick Links</text>
+  <text x="580" y="1990" fill="#9ca3af" font-size="13">Home</text>
+  <text x="580" y="2020" fill="#9ca3af" font-size="13">About</text>
+  <text x="580" y="2050" fill="#9ca3af" font-size="13">Services</text>
+  <text x="580" y="2080" fill="#9ca3af" font-size="13">Values</text>
+  <text x="580" y="2110" fill="#9ca3af" font-size="13">Contact</text>
+
+  <!-- Contact Info -->
+  <text x="900" y="1950" fill="#ffffff" font-size="16" font-weight="500">Contact Information</text>
+  <text x="900" y="1990" fill="#9ca3af" font-size="13">📍 Mogadishu, Somalia</text>
+  <text x="900" y="2020" fill="#9ca3af" font-size="13">✉️ info@ibiss.com</text>
+  <text x="900" y="2050" fill="#9ca3af" font-size="13">📞 +252 xxx xxx xxx</text>
+
+  <!-- Footer Bottom -->
+  <line x1="150" y1="2180" x2="1290" y2="2180" stroke="#4b5563" stroke-width="1"/>
+  <text x="720" y="2240" fill="#9ca3af" font-size="12" text-anchor="middle">© 2026 IBISs. All rights reserved. Sharia-compliant services.</text>
+</svg>

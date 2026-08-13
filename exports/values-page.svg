@@ -1,0 +1,167 @@
+<svg width="1440" height="3200" viewBox="0 0 1440 3200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap');
+      text { font-family: 'IBM Plex Sans', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="3200" fill="#f8f7f5"/>
+
+  <!-- Navigation -->
+  <rect width="1440" height="80" fill="#ffffff" opacity="0.95"/>
+  <line x1="0" y1="80" x2="1440" y2="80" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <rect x="100" y="20" width="40" height="40" rx="8" fill="#5a7a9b"/>
+  <text x="120" y="46" fill="#ffffff" font-size="18" font-weight="600" text-anchor="middle">IB</text>
+  <text x="155" y="38" fill="#2c3e50" font-size="16" font-weight="500">IBISs</text>
+  <text x="1100" y="46" fill="#2c3e50" font-size="16" font-weight="400">Home</text>
+  <text x="1180" y="46" fill="#2c3e50" font-size="16" font-weight="400">About</text>
+  <text x="1260" y="46" fill="#5a7a9b" font-size="16" font-weight="500">Values</text>
+
+  <!-- Hero Section -->
+  <rect y="80" width="1440" height="300" fill="url(#heroGradient)"/>
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(90,122,155,0.1);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(212,197,176,0.2);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(184,197,214,0.1);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="720" y="220" fill="#2c3e50" font-size="48" font-weight="600" text-anchor="middle">Our Core Values</text>
+  <text x="720" y="280" fill="#6b7280" font-size="20" font-weight="400" text-anchor="middle">
+    The principles that guide everything we do
+  </text>
+
+  <!-- Introduction -->
+  <rect y="420" width="1440" height="200" fill="#ffffff"/>
+  <text x="720" y="550" fill="#6b7280" font-size="16" text-anchor="middle">
+    <tspan x="720" dy="-20">At IBISs, our values are more than words—they are the bedrock of our identity and the compass</tspan>
+    <tspan x="720" dy="26">that guides our work. These principles shape how we serve our clients, develop our programs,</tspan>
+    <tspan x="720" dy="26">and contribute to the Islamic banking community.</tspan>
+  </text>
+
+  <!-- Values Grid -->
+  <rect y="660" width="1440" height="1100" fill="#f8f7f5"/>
+
+  <!-- Value 1: Integrity -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(59,130,246,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(59,130,246,0.05);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="150" y="720" width="620" height="240" rx="16" fill="url(#blueGradient)" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <circle cx="198" cy="772" r="32" fill="rgba(59,130,246,0.1)"/>
+  <rect x="184" y="758" width="28" height="28" rx="4" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <path d="M 192 772 L 196 776 L 204 764" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <text x="190" y="840" fill="#2c3e50" font-size="24" font-weight="600">Integrity</text>
+  <text x="190" y="875" fill="#6b7280" font-size="13">
+    <tspan x="190" dy="0">We uphold the highest standards of honesty, transparency, and ethical</tspan>
+    <tspan x="190" dy="20">conduct in everything we do. Our commitment to integrity forms the</tspan>
+    <tspan x="190" dy="20">foundation of trust with our clients and partners.</tspan>
+  </text>
+
+  <!-- Value 2: Sharia Compliance -->
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(34,197,94,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(34,197,94,0.05);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="800" y="720" width="620" height="240" rx="16" fill="url(#greenGradient)" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <circle cx="848" cy="772" r="32" fill="rgba(34,197,94,0.1)"/>
+  <circle cx="848" cy="772" r="16" stroke="#22c55e" stroke-width="2" fill="none"/>
+  <path d="M 838 772 L 844 778 L 858 764" stroke="#22c55e" stroke-width="2" fill="none"/>
+  <text x="840" y="840" fill="#2c3e50" font-size="24" font-weight="600">Sharia Compliance</text>
+  <text x="840" y="875" fill="#6b7280" font-size="13">
+    <tspan x="840" dy="0">Every service we offer is meticulously designed to align with Sharia</tspan>
+    <tspan x="840" dy="20">principles. We ensure that all training, consulting, and recommendations</tspan>
+    <tspan x="840" dy="20">meet the strictest standards of Islamic finance.</tspan>
+  </text>
+
+  <!-- Value 3: Knowledge Excellence -->
+  <defs>
+    <linearGradient id="amberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(245,158,11,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(245,158,11,0.05);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="150" y="990" width="620" height="240" rx="16" fill="url(#amberGradient)" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <circle cx="198" cy="1042" r="32" fill="rgba(245,158,11,0.1)"/>
+  <circle cx="198" cy="1042" r="12" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M 198 1030 L 198 1042 M 190 1050 L 206 1050" stroke="#f59e0b" stroke-width="2"/>
+  <text x="190" y="1110" fill="#2c3e50" font-size="24" font-weight="600">Knowledge Excellence</text>
+  <text x="190" y="1145" fill="#6b7280" font-size="13">
+    <tspan x="190" dy="0">We believe in the transformative power of knowledge. Our experts bring</tspan>
+    <tspan x="190" dy="20">deep expertise and stay at the forefront of industry developments to</tspan>
+    <tspan x="190" dy="20">deliver world-class training and insights.</tspan>
+  </text>
+
+  <!-- Value 4: Innovation -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(168,85,247,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(168,85,247,0.05);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="800" y="990" width="620" height="240" rx="16" fill="url(#purpleGradient)" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <circle cx="848" cy="1042" r="32" fill="rgba(168,85,247,0.1)"/>
+  <path d="M 838 1052 L 848 1032 L 858 1052 M 848 1046 L 848 1050" stroke="#a855f7" stroke-width="2" fill="none"/>
+  <text x="840" y="1110" fill="#2c3e50" font-size="24" font-weight="600">Innovation</text>
+  <text x="840" y="1145" fill="#6b7280" font-size="13">
+    <tspan x="840" dy="0">While rooted in timeless principles, we embrace modern methodologies</tspan>
+    <tspan x="840" dy="20">and technologies to deliver innovative solutions that meet the evolving</tspan>
+    <tspan x="840" dy="20">needs of Islamic banking professionals.</tspan>
+  </text>
+
+  <!-- Value 5: Sustainability -->
+  <defs>
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(16,185,129,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(16,185,129,0.05);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="150" y="1260" width="620" height="240" rx="16" fill="url(#emeraldGradient)" stroke="rgba(90, 122, 155, 0.15)" stroke-width="1"/>
+  <circle cx="198" cy="1312" r="32" fill="rgba(16,185,129,0.1)"/>
+  <path d="M 198 1320 Q 198 1305 186 1300 Q 186 1312 186 1324 Q 198 1329 210 1324 Q 210 1312 210 1300 Q 198 1305 198 1320" stroke="#10b981" stroke-width="2" fill="none"/>
+  <text x="190" y="1380" fill="#2c3e50" font-size="24" font-weight="600">Sustainability</text>
+  <text x="190" y="1415" fill="#6b7280" font-size="13">
+    <tspan x="190" dy="0">We are committed to fostering long-term growth and sustainable</tspan>
+    <tspan x="190" dy="20">development. Our programs are designed to create lasting impact that</tspan>
+    <tspan x="190" dy="20">benefits individuals, institutions, and communities.</tspan>
+  </text>
+
+  <!-- Commitment Statement -->
+  <rect y="1800" width="1440" height="360" fill="#ffffff"/>
+  <rect x="320" y="1870" width="800" height="240" rx="16" fill="url(#heroGradient)" stroke="rgba(90, 122, 155, 0.2)" stroke-width="1"/>
+  <text x="720" y="1940" fill="#2c3e50" font-size="28" font-weight="600" text-anchor="middle">Living Our Values</text>
+  <text x="720" y="1990" fill="#6b7280" font-size="14" text-anchor="middle">
+    <tspan x="720" dy="0">These values are not aspirations—they are commitments we honor every day. They inform</tspan>
+    <tspan x="720" dy="22">how we design our programs, engage with clients, and measure our success. When you</tspan>
+    <tspan x="720" dy="22">partner with IBISs, you partner with an organization that places principles above profit</tspan>
+    <tspan x="720" dy="22">and impact above expediency.</tspan>
+  </text>
+  <text x="720" y="2090" fill="#2c3e50" font-size="16" font-weight="500" text-anchor="middle">
+    Our values are your assurance of quality, integrity, and excellence.
+  </text>
+
+  <!-- Quote Section -->
+  <rect y="2200" width="1440" height="300" fill="#5a7a9b"/>
+  <text x="720" y="2340" fill="#ffffff" font-size="28" font-style="italic" text-anchor="middle">
+    <tspan x="720" dy="0">"Excellence is not a destination, but a journey guided</tspan>
+    <tspan x="720" dy="40">by unwavering principles."</tspan>
+  </text>
+  <text x="720" y="2420" fill="rgba(255,255,255,0.9)" font-size="18" text-anchor="middle">— IBISs Philosophy</text>
+
+  <!-- Footer -->
+  <rect y="2540" width="1440" height="660" fill="#2c3e50"/>
+  <text x="150" y="2660" fill="#ffffff" font-size="18" font-weight="600">IBISs</text>
+  <text x="150" y="2685" fill="#9ca3af" font-size="12">Islamic Banking Integrity Solutions</text>
+  <text x="580" y="2660" fill="#ffffff" font-size="16" font-weight="500">Quick Links</text>
+  <text x="580" y="2700" fill="#9ca3af" font-size="13">Values</text>
+  <text x="900" y="2660" fill="#ffffff" font-size="16" font-weight="500">Contact Information</text>
+  <text x="900" y="2700" fill="#9ca3af" font-size="13">📍 Mogadishu, Somalia</text>
+  <line x1="150" y1="2820" x2="1290" y2="2820" stroke="#4b5563" stroke-width="1"/>
+  <text x="720" y="2880" fill="#9ca3af" font-size="12" text-anchor="middle">© 2026 IBISs. All rights reserved. Sharia-compliant services.</text>
+</svg>
