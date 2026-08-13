@@ -1,7 +1,7 @@
 
   # IBIS web design
 
-  This is a code bundle for IBIS web design. The original project is available at https://www.figma.com/design/maOIVKD5uku5MOx6XZpb0q/IBIS-web-design.
+  This is a code bundle for IBIS web design. 
 
   ## Running the code
 
