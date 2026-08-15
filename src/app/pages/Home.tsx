@@ -160,7 +160,7 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div>
               <Award className="w-12 h-12 mx-auto mb-4 opacity-90" />
-              <h3 className="text-4xl mb-2">2025</h3>
+              <h3 className="text-4xl mb-2">2026</h3>
               <p className="text-primary-foreground/80">
                 Established
               </p>

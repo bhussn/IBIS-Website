@@ -1,7 +1,12 @@
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router';
+
+import { Button } from './ui/button';
 
 export function Navigation() {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const links = [
     { to: '/', label: 'Home' },
@@ -25,7 +30,7 @@ export function Navigation() {
             </div>
           </Link>
 
-          <div className="flex gap-8">
+          <div className="hidden md:flex gap-8">
             {links.map((link) => (
               <Link
                 key={link.to}
@@ -38,7 +43,38 @@ export function Navigation() {
               </Link>
             ))}
           </div>
+
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMenuOpen}
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
+
+        {isMenuOpen && (
+          <div className="mt-4 space-y-2 border-t border-border pt-4 md:hidden">
+            {links.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setIsMenuOpen(false)}
+                className={`block rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                  location.pathname === link.to
+                    ? 'bg-primary/10 text-primary'
+                    : 'text-foreground hover:bg-accent hover:text-primary'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );
