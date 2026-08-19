@@ -148,7 +148,8 @@ activemq-data/
 *.sage.py
 
 # Environments
-.env
+.env*
+!.env.example
 .envrc
 .venv
 env/
@@ -156,6 +157,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Cloudflare Wrangler local secrets
+.dev.vars*
+!.dev.vars.example
 
 # Spyder project settings
 .spyderproject
@@ -216,3 +221,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+node_modules

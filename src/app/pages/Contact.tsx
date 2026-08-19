@@ -11,18 +11,40 @@ export function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+    console.log(formData);
+    
+    try{
+      const response = await fetch("http://localhost:8787", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+
       });
-      setSubmitted(false);
-    }, 3000);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const result = await response.json();
+
+      console.log(result);
+    
+      setSubmitted(true);
+      setTimeout(() => {
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setSubmitted(false);
+      }, 3000);
+    }catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   const handleChange = (
