@@ -16,7 +16,7 @@ export function Contact() {
     console.log(formData);
     
     try{
-      const response = await fetch("http://localhost:8787", {
+      const response = await fetch("https://worker.ibisintegrity.workers.dev/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

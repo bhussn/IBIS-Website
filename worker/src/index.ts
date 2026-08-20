@@ -11,11 +11,24 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "http://localhost:5173",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://ibistraining.org",
+  "https://www.ibistraining.org",
+];
+
+function getCorsHeaders(request: Request) {
+  const origin = request.headers.get("Origin");
+
+  return {
+    "Access-Control-Allow-Origin":
+      origin && allowedOrigins.includes(origin)
+        ? origin
+        : "https://ibistraining.org",
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+  };
+}
 
 interface ContactForm {
   name: string;
@@ -35,14 +48,14 @@ export default {
     if (request.method === "OPTIONS") {
       return new Response(null, {
         status: 204,
-        headers: corsHeaders,
+        headers: getCorsHeaders(request),
       });
     }
 
     // Only accept POST requests
     if (request.method !== "POST") {
       return new Response("IBIS Worker is running!", {
-        headers: corsHeaders,
+        headers: getCorsHeaders(request),
       });
     }
 
@@ -88,7 +101,7 @@ ${data.message}
           },
           {
             status: 500,
-            headers: corsHeaders,
+            headers: getCorsHeaders(request),
           }
         );
       }
@@ -98,7 +111,7 @@ ${data.message}
           message: "Email sent successfully!",
         },
         {
-          headers: corsHeaders,
+          headers: getCorsHeaders(request),
         }
       );
 
@@ -111,7 +124,7 @@ ${data.message}
         },
         {
           status: 500,
-          headers: corsHeaders,
+          headers: getCorsHeaders(request),
         }
       );
     }
